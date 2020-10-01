@@ -1,0 +1,78 @@
+/* for demo purposes */
+body {
+  background-image: radial-gradient(#c3aed6,#1f8ea3,#284184,#020438);
+   font-family: 'Merriweather', serif;
+  text-align: center;
+}
+.separator{
+  margin-top : 4%;
+  margin-bottom : 3%;
+}
+#player img{
+  background: #eaeaea;
+}
+.spec1{
+  background-color :#00adb5;
+  color : #222831;
+}
+.spec2{
+  background-color :#ff2e63;
+   color : white;
+}
+.card-block .btn-outline-primary {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary {
+    color: #fff;
+    background-color: purple;
+    border-color: purple; /*set the color you want here*/
+}
+.btn-primary:hover{
+  background-color: purple;
+}
